@@ -28,17 +28,17 @@ func longestCommonPrefix(strs []string) string {
 	// 首先, 找出字符串切片中, 长度最小的字符串的长度
 	minStrLen := len(strs[0])
 	for _, v := range strs {
-		if minStrLen>len(v){
+		if minStrLen > len(v) {
 			minStrLen = len(v)
 		}
 	}
 	fmt.Println("字符串数组中长度最小的字符串是:", minStrLen)
 	// 然后, 依据最小字符串长度来查找公共前缀
 	commonTime := 0
-	I:
-	for i:=0; i<minStrLen; i++{
-		for j:=0; j<len(strs)-1; j++ {
-			if strs[j][i] != strs[j+1][i]{
+I:
+	for i := 0; i < minStrLen; i++ {
+		for j := 0; j < len(strs)-1; j++ {
+			if strs[j][i] != strs[j+1][i] {
 				break I
 			}
 		}
