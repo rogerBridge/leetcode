@@ -37,7 +37,7 @@ func reverse(x int) int {
 		}
 }
 
-func main() {
-	reverse(1534236469)
-	//fmt.Println(int(math.Pow(2, 31)))
-}
+//func main() {
+//	reverse(1534236469)
+//	//fmt.Println(int(math.Pow(2, 31)))
+//}

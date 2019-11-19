@@ -47,7 +47,7 @@ I:
 	return strs[0][:commonTime]
 }
 
-func main() {
-	r := longestCommonPrefix([]string{"github", "gitlab", "gitt", "gittttt"})
-	fmt.Println(r)
-}
+//func main() {
+//	r := longestCommonPrefix([]string{"github", "gitlab", "gitt", "gittttt"})
+//	fmt.Println(r)
+//}
