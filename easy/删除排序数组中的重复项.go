@@ -55,8 +55,3 @@ func isExist(x int, s []int) bool {
 	}
 	return false
 }
-
-//func main() {
-//	//fmt.Println(removeDuplicates([]int{1, 2,2,2,3,3,4,5,4,5}))
-//	fmt.Println(removeDuplicates([]int{1,1,2,2,2,3,4,5,6,7}))
-//}

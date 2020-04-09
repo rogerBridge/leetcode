@@ -9,5 +9,6 @@ func main() {
 	//fmt.Println(r)
 	//a := []int{1,3}
 	//fmt.Println(searchInsert(a, 2))
-	fmt.Println(lengthOfLastWord("    xyz "))
+	//fmt.Println(lengthOfLastWord("    xyz "))
+	fmt.Println(plusOne([]int{9, 9}))
 }
