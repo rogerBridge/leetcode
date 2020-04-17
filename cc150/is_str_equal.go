@@ -1,5 +1,6 @@
 package cc150
 
+import "fmt"
 
 // 给定两个字符串，请编写程序，确定其中一个字符串的字符重新排列后，能否变成另一个字符串
 // 其实还是看分布是否相等, map是否相等或者[]int是否相等
@@ -45,19 +46,21 @@ func IsStrEqualUTF8(str0 string, str1 string) bool {
 	m0 := make(map[int32]int)
 	m1 := make(map[int32]int)
 	for i:=0; i<len(str0); i++ {
-		if _, ok := m0[int32(str0[i])]; !ok {
+		if _, ok := m0[int32(str0[i])]; ok==false {
 			m0[int32(str0[i])] = 0
 			m0[int32(str0[i])] += 1
+		} else {
+			m0[int32(str0[i])] += 1
 		}
-		m0[int32(str0[i])] += 1
 	}
 	for j:=0; j<len(str1); j++{
-		if _, ok := m1[int32(str1[j])]; !ok {
-			m1[int32(str0[j])] = 0
-			m1[int32(str0[j])] += 1
-		}
+		//if _, ok := m1[int32(str1[j])]; !ok {
+		//	m1[int32(str0[j])] = 0
+		//	m1[int32(str0[j])] += 1
+		//}
 		m1[int32(str1[j])] += 1
 	}
+	fmt.Printf("m0: %v, m1: %v", m0, m1)
 	// compare two map is equal
 	for k, _:= range m0 {
 		if m0[k] != m1[k] {
