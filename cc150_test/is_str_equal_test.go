@@ -14,7 +14,7 @@ func TestIsStrEqual(t *testing.T) {
 		[]string{"1234", "4231", "true"},
 	}
 	for _, v := range testLists {
-		if cc150.IsStrEqualUTF8(v[0], v[1]) == transStr2Bool(v[2]) {
+		if cc150.IsStrEqualUTF8(v[0], v[1]) == TransStr2Bool(v[2]) {
 
 		} else {
 			t.Errorf("args: %s, %s, expect: %s, actual: %v", v[0], v[1], v[2], cc150.IsStrEqualUTF8(v[0], v[1]))
@@ -23,7 +23,7 @@ func TestIsStrEqual(t *testing.T) {
 	}
 }
 
-func transStr2Bool(s string) bool {
+func TransStr2Bool(s string) bool {
 	if s == "true" {
 		return true
 	}

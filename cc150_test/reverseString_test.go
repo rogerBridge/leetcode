@@ -1,4 +1,4 @@
-package cc150
+package cc150_test
 
 import (
 	"fmt"
