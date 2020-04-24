@@ -25,12 +25,12 @@ func HasDiffChar(tempStr string) bool {
 func HasDiffChar1(tempStr string) bool {
 	m := make([]int, 128)
 	for _, v := range tempStr {
-		m[int(byte(v))] += 1
+		m[v] += 1
 	}
 	for _, v := range m {
 		if v > 1 {
-			return true
+			return false
 		}
 	}
-	return false
+	return true
 }
