@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"leetcode/double-point"
+	double_point "leetcode/double-point"
 )
 
 func main() {
@@ -14,6 +14,8 @@ func main() {
 	//	[]int{15,19,22,24,30},
 	//}
 	//fmt.Println(sword.Find(20,s))
-	fmt.Println(double_point.ReverseVowels("leetcode"))
+	//fmt.Println(double_point.ReverseVowels("leetcode"))
+
+	fmt.Println(double_point.ValidPalindrome("aba"))
 
 }
