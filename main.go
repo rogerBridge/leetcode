@@ -16,6 +16,6 @@ func main() {
 	//fmt.Println(sword.Find(20,s))
 	//fmt.Println(double_point.ReverseVowels("leetcode"))
 
-	fmt.Println(double_point.ValidPalindrome("aba"))
-
+	//fmt.Println(double_point.ValidPalindrome("aba"))
+	fmt.Println(double_point.Merge([]int{1,2,3,0,0,0}, 3, []int{2,5,6},3))
 }
