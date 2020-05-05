@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	double_point "leetcode/double-point"
+	"leetcode/binarySearch"
 )
 
 func main() {
@@ -17,5 +17,8 @@ func main() {
 	//fmt.Println(double_point.ReverseVowels("leetcode"))
 
 	//fmt.Println(double_point.ValidPalindrome("aba"))
-	fmt.Println(double_point.Merge([]int{1,2,3,0,0,0}, 3, []int{2,5,6},3))
+	//fmt.Println(double_point.Merge([]int{1,2,3,0,0,0}, 3, []int{2,5,6},3))
+
+	//fmt.Println(binarySearch.FindInArray(8, []int{1,2,3,4,5,6,7,8,9,10}))
+	fmt.Println(binarySearch.Sqrt(11))
 }
