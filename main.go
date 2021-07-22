@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	binarysearch "leetcode/binarySearch"
 	"leetcode/others"
 	"leetcode/sword"
 	"log"
@@ -11,6 +12,7 @@ import (
 
 func main() {
 	fmt.Println(others.IsMatchString("ffabcdef", "abc"))
+	log.Println(binarysearch.Sqrt(10))
 }
 
 func traceMemStats() {

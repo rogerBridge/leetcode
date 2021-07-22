@@ -19,7 +19,7 @@ func sortString(s string) string {
 	sBytes := []byte(s)
 	strSlice := make([]byte, 128)
 	for _, v := range sBytes {
-		strSlice[v] += 1
+		strSlice[v]++
 	}
 	// 首先, 按照从小到大的规则往resultSlice里面添加byte
 	resultSlice := make([]byte, 0)
@@ -27,15 +27,15 @@ func sortString(s string) string {
 		if isZeroBytes(strSlice) {
 			break
 		}
-		for i:=0; i<len(strSlice); i++ {
+		for i := 0; i < len(strSlice); i++ {
 			if strSlice[i] != 0 {
-				strSlice[i] -= 1
+				strSlice[i]--
 				resultSlice = append(resultSlice, byte(i))
 			}
 		}
-		for i:=len(strSlice)-1; i>-1; i--{
+		for i := len(strSlice) - 1; i > -1; i-- {
 			if strSlice[i] != 0 {
-				strSlice[i] -= 1
+				strSlice[i]--
 				resultSlice = append(resultSlice, byte(i))
 			}
 		}
@@ -43,6 +43,7 @@ func sortString(s string) string {
 	return string(resultSlice)
 }
 
+// If all bytes in byte slice is not zero, return false
 func isZeroBytes(b []byte) bool {
 	for _, v := range b {
 		if v != 0 {
