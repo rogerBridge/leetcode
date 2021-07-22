@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-	binarysearch "leetcode/binarySearch"
-	"leetcode/others"
+	leetcodeofficial "leetcode/leetcodeOfficial"
 	"leetcode/sword"
 	"log"
 	"runtime"
@@ -11,8 +9,12 @@ import (
 )
 
 func main() {
-	fmt.Println(others.IsMatchString("ffabcdef", "abc"))
-	log.Println(binarysearch.Sqrt(10))
+	// fmt.Println(others.IsMatchString("ffabcdef", "abc"))
+	// log.Println(binarysearch.Sqrt(10))
+	priceList := []int{1, 2, 3, 11, 8, 9}
+	leetcodeofficial.MaxProfit(priceList)
+	// traceMemStats()
+	// timeTrack()
 }
 
 func traceMemStats() {
