@@ -1,4 +1,6 @@
-package double_point
+package main
+
+import "log"
 
 //给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 nums1 成为一个有序数组。
 //
@@ -21,11 +23,17 @@ func Merge(nums1 []int, m int, nums2 []int, n int) []int {
 			j++
 		}
 	}
-	if i<m {
+	if i < m {
 		r = append(r, nums1[i:]...)
 	}
-	if j<m {
+	if j < n {
 		r = append(r, nums2[j:]...)
 	}
 	return r
+}
+
+func main() {
+	v := Merge([]int{1,2,3,0,0,0}, 3, []int{2,5,6}, 3)
+	log.Println(v)
+	return
 }

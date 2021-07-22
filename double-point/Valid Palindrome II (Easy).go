@@ -1,4 +1,4 @@
-package double_point
+package main
 
 func ValidPalindrome(s string) bool {
 	for i, j:=0, len(s)-1; i<j; i,j = i+1,j-1{

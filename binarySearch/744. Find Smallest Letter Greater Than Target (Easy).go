@@ -6,11 +6,12 @@ package binarySearch
 //
 //如果目标字母 target = 'z' 并且字符列表为 letters = ['a', 'b']，则答案返回 'a'
 
+// 因为letters队列是按照从小到大的顺序排列的, 所以遍历一旦得到一个bigger than target的元素, 那就是大于target的最小的一个元素 :)
 func NextGreatestLetter(letters []byte, target byte) byte {
 	for _, v := range letters {
 		if v>target{
 			return v
 		}
 	}
-	return letters[0]
+	return 0
 }

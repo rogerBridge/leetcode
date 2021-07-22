@@ -1,4 +1,4 @@
-package double_point
+package main
 
 //题目描述：在有序数组中找出两个数，使它们的和为 target。
 //

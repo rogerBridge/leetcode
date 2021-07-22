@@ -17,7 +17,6 @@ import "math"
 // 插入, 删除, 替换
 // 假设字符全部都是ASCII
 func EditOnce(str0 string, str1 string) bool {
-	// First of all, compare two str0 and str1, if equals, return false
 	if str0 == "" && str1 == "" {
 		return true
 	}

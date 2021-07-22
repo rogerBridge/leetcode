@@ -1,4 +1,4 @@
-package double_point
+package main
 
 import "math"
 
