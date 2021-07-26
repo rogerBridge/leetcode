@@ -1,7 +1,7 @@
 package main
 
 import (
-	leetcodeofficial "leetcode/leetcodeOfficial"
+	"fmt"
 	"leetcode/sword"
 	"log"
 	"runtime"
@@ -11,10 +11,11 @@ import (
 func main() {
 	// fmt.Println(others.IsMatchString("ffabcdef", "abc"))
 	// log.Println(binarysearch.Sqrt(10))
-	priceList := []int{1, 2, 3, 11, 8, 9}
-	leetcodeofficial.MaxProfit(priceList)
+	// priceList := []int{1, 2, 3, 11, 8, 9}
+	// leetcodeofficial.MaxProfit(priceList)
 	// traceMemStats()
 	// timeTrack()
+	printASCII()
 }
 
 func traceMemStats() {
@@ -26,4 +27,13 @@ func traceMemStats() {
 func timeTrack() {
 	start := time.Now()
 	log.Println(sword.ReplaceSpaces("hello world"), "elapsed:", time.Since(start))
+}
+
+func printASCII() {
+	s := "安瑞gg峰"
+	for i, v := range s {
+		fmt.Printf("%d: %x\n", i, rune(v))
+	}
+	fmt.Println([]byte(s))
+	fmt.Printf("%b\n", 229)
 }
